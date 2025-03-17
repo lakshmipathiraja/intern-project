@@ -22,7 +22,7 @@ export const SideBar = () => {
         {courseLessons.lessons.map((lesson) => (
           <li key={lesson.id}>
             {/* Use the Link component directl.y without <a> tag */}
-            <Link href={`/Courses/${Courses.id}/Lessons/${Lesson.id}`} className="hover:text-gray-400 text-lg">
+            <Link href={`/Courses/${id}/Lessons/${lesson.id}`} className="hover:text-gray-400 text-lg">
               {lesson.title}
             </Link>
             <div className="border-b-2 pt-5 border-white"></div>
